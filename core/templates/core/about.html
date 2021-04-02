@@ -1,0 +1,44 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="text-center">
+    <img src="{% static 'core/images/hrithik1.jpeg' %}" alt="ProfilePic"
+             class="img-thumbnail mt-2" width="500px" height="00px">
+</div>
+<div class="text-white mt-2 mx-5 text-justify">
+    <h1 class="font-weight-bold st-font"> Hello, </h1>
+    <div class="px-4">
+    <p style="text-indent:100px">
+        Dance is a performing art. Our academy believes in treating every student as a family member and not only as a client.
+        Our main purpose is to make everyone to enjoy what dance is. Dance and our studios is like Goddess Saraswati for us.
+        This academy had its inauguration in 2019. Till now, we have 3 studios. We are priviledged to everyone who have contributed in making our academy a success.
+        Academy has its branch in Delhi, lucknow, pune for now. But if we got more requests from other states too then we will plan to open our academy in other cities too.
+    </p>
+    </div>
+</div>
+<div class="text-center">
+        <a href="{%url 'services' %}" class="btn btn-outline-warning my-5">Contact details</a>
+        <a href="{%url 'style' %}" class="btn btn-outline-info my-5">Fees & timings</a>
+</div>
+<div class="text-white text-center">
+    <h2 style="font-size: 45px;font-weight: 600;font-style: inherit;text-transform: uppercase;
+    text-align: center;color: #ffffff">Subscribe to our newsletter<h2>
+    <input type="email" name="your-email" value size="40" aria-required="true">
+    <button type="submit" class="btn btn-outline-info">Subscribe</button>
+</div>
+
+ <div class="row text-center text-danger mt-5">
+        <div class="col-sm-4">
+            <h3 class="widget-title">Featured</h3>
+            <iframe width="360" height="360" src="https://www.youtube.com/embed/hI2NjF6dpao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            <img src="{% static 'core/images/hrithik.jpg' %}"
+                 width="100"
+                 height="100" /></iframe>
+        </div>
+         <div class="col-sm-4" >
+            <h3 class="widget-title">Trending videos</h3>
+            <iframe width="360" height="360" src="https://www.youtube.com/embed/oGneAab3e88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>
+         </div>
+ </div>
+
+{% endblock content %}

@@ -1,0 +1,14 @@
+{% load static %}
+<div class="border-right border-light" >
+    <div class="text-center">
+        <img src="{% static 'core/images/hrithik1.jpeg' %}" alt="ProfilePic"
+             class="img-fluid rounded-circle mt-5" width="100px" height="100px">
+        <h3 class="text-white mt-3 st-font">Unstoppable's academy</h3>
+    </div>
+        <hr class="bg-light" size="5px">
+        <nav class="nav flex-column text-center">
+            <a href="{%url 'about' %}" class="nav-link {{about}}">About us</a>
+            <a href="{%url 'style' %}" class="nav-link {{style}}">Styles</a>
+            <a href="{%url 'services' %}" class="nav-link {{services}}">Contact</a>
+        </nav>
+</div>
